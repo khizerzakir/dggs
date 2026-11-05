@@ -1,0 +1,71 @@
+[workspace]
+authors = ["khizerzakir <kizarzakir@gmail.com>"]
+channels = ['conda-forge']
+name = "dggs"
+platforms = ['linux-64']
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ipykernel = ">=7.4.0,<8"
+pip = ">=26.2.2,<27"
+jupyterlab = ">=4.6.5,<5"
+dggrid = ">=9.1,<10"
+
+[environments.geopython2025]
+no-default-feature = true
+channels = ["conda-forge"]
+
+[environments.geopython2025.dependencies]
+pyopenssl = ">=20.0.1"
+python = "3.11.*"
+requests = ">=2.25.1"
+cartopy = "*"
+contextily = "*"
+descartes = "*"
+fiona = "*"
+folium = "*"
+gdal = "*"
+dggrid = "*"
+geographiclib = "*"
+datashader = "*"
+dask = "*"
+geojson = "*"
+geopandas = "*"
+geos = "*"
+geoviews = "*"
+holoviews = "*"
+hvplot = "*"
+ipykernel = "*"
+ipython = "*"
+ipywidgets = "*"
+jupyter = "*"
+jupyterlab = "*"
+jupyter-cache = "*"
+lonboard = "*"
+matplotlib = "*"
+numpy = "*"
+owslib = "*"
+pandas = "*"
+pillow = "*"
+proj = "*"
+pydeck = "*"
+pyproj = "*"
+pyogrio = "*"
+pyarrow = "*"
+rasterio = "*"
+rasterstats = "*"
+shapely = "*"
+tqdm = "*"
+xarray = "*"
+rioxarray = "*"
+zarr = "*"
+mapclassify = "*"
+h3-py = "*"
+wheel = "*"
+setuptools = "*"
+pip = "*"
+
+[pypi-dependencies]
+dggrid4py = ">=0.7.2, <0.8"
